@@ -30,3 +30,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }, 1000);
 });
 
+window.onload = function() {
+    const modal = document.getElementById("modal");
+    const overlay = document.getElementById("overlay");
+    const closeButton = document.querySelector(".close");
+    const modalImage = document.querySelector(".modal-image");
+    const backgroundVideo = document.getElementById("background-video");
+
+    function closeModal() {
+        modal.style.display = "none";
+        overlay.style.display = "none";
+        backgroundVideo.play();
+        backgroundVideo.muted = false;
+        backgroundVideo.volume = 0.4;
+    }
+
+    overlay.onclick = closeModal;
+    closeButton.onclick = closeModal;
+    modalImage.onclick = closeModal;
+};
