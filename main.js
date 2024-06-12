@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     // Fecha objetivo: 3 de agosto de 2024
-    const targetDate = new Date('2024-06-13T00:00:00').getTime();
+    const targetDate = new Date('2024-06-15T00:00:00').getTime();
 
     // Actualiza el contador cada segundo
     const countdown = setInterval(() => {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
     }, 1000);
 });
-
+/*
 window.onload = function() {
     const modal = document.getElementById("modal");
     const overlay = document.getElementById("overlay");
@@ -49,3 +49,4 @@ window.onload = function() {
     closeButton.onclick = closeModal;
     modalImage.onclick = closeModal;
 };
+*/
