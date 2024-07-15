@@ -26,7 +26,7 @@ h2{
 }
 
 h2 b{
-    color: #FBB03B;
+    color: #007fd4;
     font-weight: 900;
 }
 
@@ -120,10 +120,14 @@ p{
     color: #fff;
     font-size: 20px;
     font-weight: 700;
-    background-color: #FBB03B;
+    background-color: #007fd4;
     border-radius: 16px;
     padding: 18px 46px;
     display: inline-flex;
+}
+
+.btn:hover{
+    background-color: #0065a8;
 }
 
 .social-networks{
@@ -167,7 +171,7 @@ p{
     margin: auto;
     padding: 20px;
     width: 80%;
-    max-width: 600px;
+    max-width: 480px;
 }
 
 .modal-image {
@@ -199,15 +203,70 @@ p{
     cursor: pointer;
 }
 
+.organiza{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+h2{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    width: max-content;
+    margin: auto;
+    gap: 8px;
+}
+
+.dscto{
+    font-size: 14px;
+    color: #fff;
+    background-color: #c9002e;
+    border: 2px solid #c9002e;
+    border-radius: 5px;
+    padding: 2px 6px;
+    display: inline-flex;
+    height: max-content;
+    position: absolute;
+    left: calc(100% + 8px);
+    white-space: nowrap;
+}
 
 @media screen and (max-width: 780px) {
+
+    .content > img{
+        max-width: 300px;
+    }
+    .organiza{
+        position: relative;
+        bottom: unset;
+        right: unset;
+        margin-top: 40px;
+    }
+    .dscto{
+        position: relative;
+        left: unset;
+        display: block;
+        width: max-content;
+        margin: 10px auto 0;
+    }
+    h2{
+        display: block;
+    }
     .social-networks{
         flex-direction: column;
         position: relative;
         bottom: unset;
         left: unset;
         right: unset;
-        max-width: 220px;
+        max-width: 188px;
         margin: auto;
     }
     .content{
