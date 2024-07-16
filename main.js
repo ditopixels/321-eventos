@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }, 1000);
 });
 
+/*
 window.onload = function() {
     const modal = document.getElementById("modal");
     const overlay = document.getElementById("overlay");
@@ -48,4 +49,4 @@ window.onload = function() {
     overlay.onclick = closeModal;
     closeButton.onclick = closeModal;
     modalImage.onclick = closeModal;
-};
+};*/
